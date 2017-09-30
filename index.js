@@ -13,7 +13,7 @@ class SVGAProtoHelper_1_5_0 {
 
     static convertToProto(obj) {
         const movieItem = new Proto.MovieEntity();
-        movieItem.setVersion(obj.ver);
+        movieItem.setVersion("1.5.0");
         const movieParams = new Proto.MovieParams();
         movieParams.setViewboxwidth(obj.movie.viewBox.width);
         movieParams.setViewboxheight(obj.movie.viewBox.height);
@@ -209,7 +209,7 @@ class SVGAProtoHelper_2_0_0 {
 
     static convertToProto(obj, fileMapping) {
         const movieItem = new Proto.MovieEntity();
-        movieItem.setVersion(obj.ver);
+        movieItem.setVersion("2.0.0");
         const movieParams = new Proto.MovieParams();
         movieParams.setViewboxwidth(obj.movie.viewBox.width);
         movieParams.setViewboxheight(obj.movie.viewBox.height);
