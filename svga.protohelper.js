@@ -70,10 +70,6 @@
 "use strict";
 
 
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -82,7 +78,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 var Proto = __webpack_require__(1);
 
-var SVGAProtoHelper = exports.SVGAProtoHelper = function () {
+var SVGAProtoHelper = function () {
     function SVGAProtoHelper() {
         _classCallCheck(this, SVGAProtoHelper);
     }
@@ -279,6 +275,8 @@ var SVGAProtoHelper = exports.SVGAProtoHelper = function () {
 if ((typeof window === "undefined" ? "undefined" : _typeof(window)) === "object") {
     window.SVGAProtoHelper = SVGAProtoHelper;
 }
+
+exports.SVGAProtoHelper = SVGAProtoHelper;
 
 /***/ }),
 /* 1 */
