@@ -23,7 +23,7 @@ function toArrayBuffer(buf) {
     const sample = JSON.parse(fs.readFileSync('./tests/2.0.0/movie.spec', { encoding: "utf-8" }));
     for (var imageKey in sample.images) {
         fileMapping[imageKey] = toArrayBuffer(fs.readFileSync('./tests/2.0.0/' + imageKey + '.png'));
-        const stream = new Buffer(SVGAProtoHelper_2_0_0.convertToProto(sample, fileMapping));
-        fs.writeFileSync("./tests/2.0.0/rose.svga", zlib.deflateSync(stream))
     }
+    const stream = new Buffer(SVGAProtoHelper_2_0_0.convertToProto(sample, fileMapping));
+    fs.writeFileSync("./tests/2.0.0/rose.svga", zlib.deflateSync(stream))
 })();
