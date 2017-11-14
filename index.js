@@ -353,13 +353,13 @@ class SVGAProtoHelper_2_0_0 {
                             }
                             if (typeof shape.styles.lineJoin === "string") {
                                 if (shape.styles.lineJoin === "miter") {
-                                    styleItem.setLinejoin(Proto.ShapeEntity.ShapeStyle.LineJoin.LineJoin_MITER)
+                                    styleItem.setLinejoin(Proto.ShapeEntity.ShapeStyle.LineJoin.LINEJOIN_MITER)
                                 }
                                 else if (shape.styles.lineJoin === "round") {
-                                    styleItem.setLinejoin(Proto.ShapeEntity.ShapeStyle.LineJoin.LineJoin_ROUND)
+                                    styleItem.setLinejoin(Proto.ShapeEntity.ShapeStyle.LineJoin.LINEJOIN_ROUND)
                                 }
                                 else if (shape.styles.lineJoin === "bevel") {
-                                    styleItem.setLinejoin(Proto.ShapeEntity.ShapeStyle.LineJoin.LineJoin_BEVEL)
+                                    styleItem.setLinejoin(Proto.ShapeEntity.ShapeStyle.LineJoin.LINEJOIN_BEVEL)
                                 }
                             }
                             if (typeof shape.styles.miterLimit === "number") {
